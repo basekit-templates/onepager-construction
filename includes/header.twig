@@ -1,0 +1,13 @@
+﻿<header class="template-header">
+
+	<div class="wrapper clearfix">
+		<div class="header-companyname">
+			{{widget('companyname', 'header-companyname', {"business": "profile"})|raw}}
+		</div>
+	</div>
+
+	<div class="header-feature">
+		{{widget('feature', 'header-feature', {"header": "", "strapline":"", "buttonText":"Ota yhteyttä","defaultBgImg": asset('images/feature-bg.jpg'), 'positionTopPercentage': '50','showBtn': true})|raw}}
+	</div>
+
+</header>

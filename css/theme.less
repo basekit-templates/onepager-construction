@@ -1,0 +1,131 @@
+/* ----------------------------------------
+
+   Colour Swatches
+   ========================================
+   "color1": == Background
+   "color2": == Contrast colour
+   "color3": == Button colour
+   "color4": == Title colour
+   "color5": == Paragraph colour
+   "color6": == Nav text colour
+   "color7": == Header BG colour
+
+   Font Swatches
+   ========================================
+   "font1":  == Heading 1
+   "font2":  == Heading 2
+   "font3":  == Heading 3
+   "font4":  == Heading 4
+   "font5":  == Paragraph
+   "font6":  == Navigation Text
+   "font7":  == Buttons
+   "font8":  == Feature Title
+   "font9":  == Feature Subtitle
+   "font10": == Logo
+
+---------------------------------------- */
+
+/* TDK 7.41 (Fix for main.css)
+======================================== */
+
+body.in-tdk {
+	margin-top: 22px !important;
+	@media @tablet {
+		margin-top: 29px !important;
+	}
+	@media @mobile {
+		margin-top: 29px !important;
+	}
+}
+
+/* Wrapper
+======================================== */
+
+.wrapper {
+	width: 90%;
+	margin: 0 5%;
+	@media only screen and (min-width: 1140px) {
+		width: 1140px;
+		margin: 0 auto;
+	}
+}
+
+/* Header - Company Name (Widget)
+======================================== */
+
+header .header-companyname {
+	padding: 20px 0;
+	background-color: @color-swatch7;
+}
+
+/* Header - Feature (Widget)
+======================================== */
+
+header .header-feature {
+	text-align: center;
+}
+
+header .header-feature .spare {
+	padding: 0 20px;
+}
+
+/* Main - Content
+======================================== */
+
+main.template-main {
+	padding: 40px 0;
+}
+
+/* Footer
+======================================== */
+
+footer.template-footer {
+	padding: 40px 0;
+	background-color: @color-swatch2;
+}
+
+/* Footer - Company Name (Widget)
+======================================== */
+
+footer.template-footer {
+	.widget.companyname {
+		a {
+			font-size: bkscale(@font-swatch10-font-size, 0.8);
+			color: @color-swatch3;
+		}
+	}
+}
+
+/* Footer - Header/Address (Widget)
+======================================== */
+
+footer.template-footer {
+	.widget.content {
+		.bk-content-text {
+			h1,h2, h3, h4 {
+				color: @color-swatch3;
+			}
+			p {
+				color: darken(@color-swatch1,20%);
+			}
+		}
+	}
+}
+
+/* Footer - Address (Widget)
+======================================== */
+
+footer.template-footer {
+	.widget.companyaddress {
+		p.address,
+		p.address1,
+		p.address2,
+		p.postal-code,
+		p.country {
+			color: darken(@color-swatch1,20%);
+			&:empty {
+				display: none;
+			}
+		}
+	}
+}
