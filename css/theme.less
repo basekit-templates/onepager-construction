@@ -90,8 +90,24 @@ footer.template-footer {
 footer.template-footer {
 	.widget.companyname {
 		a {
+			position: relative;
+			top: -2px;
 			font-size: bkscale(@font-swatch10-font-size, 0.8);
+			line-height: bkscale(@font-swatch10-line-height, 0.8);
 			color: @color-swatch3;
+		}
+	}
+}
+
+/* Tablet viewport */
+
+footer.template-footer {
+	@media @tablet {
+		.widget.companyname {
+			a {
+				font-size: bkscale(@font-swatch10-font-size, 0.6);
+				line-height: bkscale(@font-swatch10-line-height, 0.6);
+			}
 		}
 	}
 }
@@ -102,7 +118,7 @@ footer.template-footer {
 footer.template-footer {
 	.widget.content {
 		.bk-content-text {
-			h1,h2, h3, h4 {
+			h1, h2, h3, h4 {
 				color: @color-swatch3;
 			}
 			p {

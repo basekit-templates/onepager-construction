@@ -112,6 +112,7 @@ main .widget {
 	@media @tablet {
 		a {
 			font-size: bkscale(@font-swatch10-font-size, 0.8);
+			line-height: bkscale(@font-swatch10-line-height, 0.8);
 		}
 	}
 }
@@ -122,6 +123,7 @@ main .widget {
 	@media @mobile {
 		a {
 			font-size: bkscale(@font-swatch10-font-size, 0.6);
+			line-height: bkscale(@font-swatch10-line-height, 0.6);
 		}
 	}
 }
@@ -577,12 +579,12 @@ main .widget {
 				.spare.wrapper {
 					h2 {
 						font-size: bkscale(@font-swatch8-font-size, 0.8);
-						line-height: @font-swatch8-line-height;
+						line-height: bkscale(@font-swatch8-line-height, 0.8);
 						span {}
 					}
 					h3 {
 						font-size: bkscale(@font-swatch9-font-size, 0.8);
-						line-height: @font-swatch9-line-height;
+						line-height: bkscale(@font-swatch9-line-height, 0.8);
 						span {}
 					}
 					span.feature-btn {
@@ -606,12 +608,12 @@ main .widget {
 				.spare.wrapper {
 					h2 {
 						font-size: bkscale(@font-swatch8-font-size, 0.6);
-						line-height: @font-swatch8-line-height;
+						line-height: bkscale(@font-swatch8-line-height, 0.6);
 						span {}
 					}
 					h3 {
 						font-size: bkscale(@font-swatch9-font-size, 0.6);
-						line-height: @font-swatch9-line-height;
+						line-height: bkscale(@font-swatch9-line-height, 0.6);
 						span {}
 					}
 					span.feature-btn {
@@ -865,6 +867,7 @@ main .widget {
 		}
 		article.blog-post-item.has-image {
 			.blog-post-feature-image-wrap {
+				background-size: contain;
 				margin-bottom: 15px;
 				img.blog-post-feature-image {}
 			}
@@ -935,6 +938,7 @@ main .widget {
 	}
 	article.blog-post-item.has-image {
 		.blog-post-feature-image-wrap {
+			background-size: contain;
 			margin-bottom: 15px;
 			img.blog-post-feature-image {}
 		}
@@ -1350,6 +1354,7 @@ main .widget {
 			tr.basket-summary-items {
 				td {
 					.image-wrap {
+						background-size: contain;
 						img.image {}
 					}
 					.basket-summary-product-info {
