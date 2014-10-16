@@ -5,25 +5,16 @@
 	<head>
 	
 		{% include "includes/head.twig" %}
-		
 		{% include basekit.headScript %}
 		
 	</head>
 
 	<body class="{{ page.backgroundClass }} {{ site.colorSwatch }}">
-		
+	
 		{% include "includes/header.twig" %}
-
-		<div class="wrapper">
-		
-			<main class="template-main">
-
-				{% block content %}
-				{% endblock %}
-
-			</main>
 			
-		</div>
+		{% block content %}
+		{% endblock %}
 		
 		{% include "includes/footer.twig" %}
 

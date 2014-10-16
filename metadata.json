@@ -2,6 +2,9 @@
 	"name":"OnePager: Construction",
 	"thumbnail":"thumbnail.png",
 	"templateType":"standard",
+	"pageTypes":[
+		"home"
+	],
 	"tags": {
 		"en": ["basic", "simple"]
 	},
@@ -17,6 +20,51 @@
 			"color5":"#808080",
 			"color6":"#4b4545",
 			"color7":"#ffffff"
+		},
+		"Swatch 2": {
+			"color1":"#ffffff",
+			"color2":"#322d2d",
+			"color3":"#edd100",
+			"color4":"#4b4545",
+			"color5":"#808080",
+			"color6":"#4b4545",
+			"color7":"#edd100"
+		},
+		"Swatch 3": {
+			"color1":"#ffffff",
+			"color2":"#322d2d",
+			"color3":"#3498db",
+			"color4":"#4b4545",
+			"color5":"#808080",
+			"color6":"#4b4545",
+			"color7":"#ffffff"
+		},
+		"Swatch 4": {
+			"color1":"#ffffff",
+			"color2":"#322d2d",
+			"color3":"#3498db",
+			"color4":"#4b4545",
+			"color5":"#808080",
+			"color6":"#ffffff",
+			"color7":"#3498db"
+		},
+		"Swatch 5": {
+			"color1":"#ffffff",
+			"color2":"#322d2d",
+			"color3":"#e74c3c",
+			"color4":"#4b4545",
+			"color5":"#808080",
+			"color6":"#4b4545",
+			"color7":"#ffffff"
+		},
+		"Swatch 6": {
+			"color1":"#ffffff",
+			"color2":"#322d2d",
+			"color3":"#e74c3c",
+			"color4":"#4b4545",
+			"color5":"#808080",
+			"color6":"#ffffff",
+			"color7":"#e74c3c"
 		}
 	},
    	"fontSwatch": {

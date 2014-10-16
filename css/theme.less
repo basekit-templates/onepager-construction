@@ -1,4 +1,4 @@
-/* ----------------------------------------
+﻿/* ----------------------------------------
 
    Colour Swatches
    ========================================
@@ -50,23 +50,43 @@ body.in-tdk {
 	}
 }
 
-/* Header - Company Name (Widget)
+/* Header - Logo & Company Name (Widget)
 ======================================== */
 
-header .header-companyname {
+header.template-header {
 	padding: 20px 0;
 	background-color: @color-swatch7;
+	border-bottom: 1px solid darken(@color-swatch7,10%);
+	.widget.logo,
+	.widget.companyname {
+		display: inline-block;
+		vertical-align: -webkit-baseline-middle;
+		vertical-align: middle;
+	}
+	.widget.logo {
+		a {
+			.logo {
+				img {
+					margin: 5px 15px 0 0;
+				}
+			}
+		}
+	}
+	.widget.companyname {
+		a {
+			color: @font-swatch6-color;
+		}
+	}
 }
 
-/* Header - Feature (Widget)
+/* Home Twig - Feature (Widget)
 ======================================== */
 
-header .header-feature {
+.template-feature {
 	text-align: center;
-}
-
-header .header-feature .spare {
-	padding: 0 20px;
+	.spare {
+		padding: 0 20px;
+	}
 }
 
 /* Main - Content
