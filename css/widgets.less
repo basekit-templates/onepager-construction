@@ -561,6 +561,7 @@ main .widget {
 
 .widget.feature {
 	.feature-bgimg {
+		height: 500px;
 		.content {
 			height: 500px;
 			.spare.wrapper {
@@ -584,9 +585,10 @@ main .widget {
 
 /* Tablet viewport */
 
-.widget.feature {
-	@media @tablet {
+@media @tablet {
+	.widget.feature {
 		.feature-bgimg {
+			height: 375px;
 			.content {
 				height: 375px;
 				.spare.wrapper {
@@ -613,9 +615,10 @@ main .widget {
 
 /* Mobile viewport */
 
-.widget.feature {
-	@media @mobile {
+@media @mobile {
+	.widget.feature {
 		.feature-bgimg {
+			height: 250px;
 			.content {
 				height: 250px;
 				.spare.wrapper {

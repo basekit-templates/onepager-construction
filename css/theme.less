@@ -25,18 +25,7 @@
 
 ---------------------------------------- */
 
-/* TDK 7.41 (Fix for main.css)
-======================================== */
-
-body.in-tdk {
-	margin-top: 0 !important;
-	@media @tablet {
-		margin-top: 0 !important;
-	}
-	@media @mobile {
-		margin-top: 0 !important;
-	}
-}
+body {}
 
 /* Wrapper
 ======================================== */
@@ -54,7 +43,6 @@ body.in-tdk {
 ======================================== */
 
 nav.template-nav {
-	.clearfix;
 	border-bottom: 1px solid darken(@color-swatch3,20%);
 	background-color: @color-swatch3;
 	&:empty {
@@ -105,7 +93,7 @@ header.template-header {
 /* Main - Content
 ======================================== */
 
-section.page-body {
+section.main-content {
 	padding: 40px 0;
 }
 
