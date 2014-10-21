@@ -1,4 +1,12 @@
-﻿<header class="template-header">
+﻿<nav class="template-nav">
+
+	<div class="wrapper">
+		{{widget('extendednavigation', 'nav', {"align":"left","showTplWidget":"0"})|raw}}
+	</div>
+	
+</nav>
+
+<header class="template-header">
 
 	<div class="wrapper">
 		{{widget('logo', 'header-logo', {"defaultlogo": asset('images/logo.png'),"showTplWidget":"0"})|raw}}

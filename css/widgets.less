@@ -28,42 +28,7 @@
 /* All widgets in the main area
 ======================================== */
 
-main .widget.logo,
-main .widget.companyname,
-main .widget.extendednavigation,
-main .widget.content,
-main .widget.contactform,
-main .widget.twitter,
-main .widget.button,
-main .widget.companyaddress,
-main .widget.socialicons,
-main .widget.youtube,
-main .widget.line,
-main .widget.map,
-main .widget.profile,
-main .widget.image,
-main .widget.feature,
-main .widget.paypalbuynow,
-main .widget.tweet,
-main .widget.dropbox,
-main .widget.clicktocall,
-main .widget.gallery,
-main .widget.responsiveslideshow,
-main .widget.signupform,
-main .widget.blogpostlist,
-main .widget.blogpost,
-main .widget.blogsearch,
-main .widget.menusections,
-main .widget.menu,
-main .widget.ecomproductslist,
-main .widget.ecomproduct,
-main .widget.ecombasket,
-main .widget.ecombasketsummary,
-main .widget.ecomcategorieslist,
-main .widget.ecomfeaturedproducts,
-main .widget.soundcloud,
-main .widget.facebookcomments,
-main .widget.yelpreview {
+main .widget {
 	margin: 0 0 25px 0;
 	padding: 0;
 }
@@ -132,82 +97,126 @@ main .widget {
 ======================================== */
 
 .widget.extendednavigation {
-	ul {
-		li,
-		li.folder,
-		li.selected {
-			a {
-				padding: 0;
-			}
-			span.text {
-				padding: 10px 20px;
-				background-color: @color-swatch3;
-				.transition(all, 0.2s, ease-out);
-				&:hover {
-					background-color: darken(@color-swatch3, 5%);
-					color: @color-swatch1;
+	.extendednavigation {
+		ul {
+			li {
+				display: block;
+				float: left;
+				border-right: 1px solid darken(@color-swatch3,20%);
+				a {
+					padding: 10px 15px;
+					background-color: @font-swatch7-background-color;
+					color: @font-swatch7-color;
+					.transition(background-color, 0.2s, ease-out);
+					span.text {}
+					&:hover {
+						background-color: @font-swatch7-background-color-hover;
+					}
+				}
+				&:first-child {
+					border-left: 1px solid darken(@color-swatch3,20%);
 				}
 			}
-		}
-		li.folder {
-			margin-right: 0;
-			span.text {
-				padding: 12px 30px 11px 20px;
-			}
-			ul li {
-				border-top: 1px solid darken(@color-swatch3, 7.5%);
+			li.folder {
+				margin-right: 0;
 				span.text {
-					background-color: darken(@color-swatch3, 2.5%);
+					padding: 10px 25px 10px 15px;
+					background-color: @font-swatch7-background-color;
+					color: @font-swatch7-color;
+					&:hover {
+						background-color: @font-swatch7-background-color-hover;
+					}
+				}
+				ul {
+					li {
+						display: block;
+						float: none;
+						border-top: 1px solid darken(@color-swatch3,20%);
+						border-left: 0;
+						border-right: 0;
+						a {
+							.transition(background-color, 0s, ease-out);
+							span.text {
+								padding: 0;
+								background-color: transparent;
+							}
+						}
+						&:first-child {
+							border-top: 0;
+						}
+					}
+				}
+				&:hover {
+					> span.text {
+						background-color: @font-swatch7-background-color-hover;
+					}
+				}
+				&:after {
+					top: 45%;
+					right: 11px;
 				}
 			}
-			&:after {
-				top: 45%;
-				right: 15px;
+			li.selected {
+				a {
+					background-color: @font-swatch7-background-color-hover;
+					span.text {}
+				}
 			}
 		}
-		li.selected {
-			span.text {
-				background-color: lighten(@color-swatch3, 20%);
-			}
-		}
+		a.pull {}
 	}
-}
-
-.widget.extendednavigation ul > li:hover > span.text {
-	background-color: darken(@color-swatch3, 5%);
-	color: @color-swatch1;
 }
 
 /* Tablet viewport */
 
-.widget.extendednavigation {
-	@media @tablet {
-		a.pull {
-			top: -25px;
-			right: 10px;
-		}
-		ul {
-			padding-top: 0;
-			border: 0;
-			li,
-			li.folder,
-			li.selected {
+@media @tablet {
+	.widget.extendednavigation {
+		.extendednavigation {
+			ul {
+				margin: 0;
 				padding: 0;
-				border-color: darken(@color-swatch3, 7.5%);
-				span.text {
-					display: block;
-					width: 100%;
-				}
-				ul li {
-					border-top: 0;
+				li {
+					float: none;
+					padding: 0;
+					border-top: 1px solid darken(@color-swatch3,20%);
+					border-bottom: 0;
+					border-left: 0;
+					border-right: 0;
+					a {
+						span.text {}
+					}
 					&:first-child {
-						border-top: 1px solid darken(@color-swatch3, 7.5%);
+						border-top: 0;
+						border-left: 0;
 					}
 				}
-				&:hover {
+				li.folder {
+					span.text {}
 					ul {
-						margin-top: 0;
+						margin: 0;
+						padding: 0;
+						li {
+							a {
+								span.text {}
+							}
+							&:first-child {
+								border-top: 1px solid darken(@color-swatch3,20%);
+							}
+						}
 					}
+				}
+				li.selected {
+					a {
+						span.text {}
+					}
+				}
+			}
+			a.pull {
+				top: 12px;
+				right: 0px;
+				&:after {
+					background: @font-swatch7-color;
+					box-shadow: 0 6px 0 @font-swatch7-color, 0 12px 0 @font-swatch7-color;
 				}
 			}
 		}
