@@ -238,6 +238,7 @@ td {}
 ======================================== */
 
 form,
+.widget.fonectacontactform form,
 .widget.contactform form,
 .widget.profile form,
 .widget.signupform form,
@@ -246,6 +247,7 @@ form,
 
 /* Fieldsets */
 fieldset,
+.widget.fonectacontactform fieldset,
 .widget.contactform fieldset,
 .widget.profile fieldset,
 .widget.signupform fieldset {
@@ -254,6 +256,7 @@ fieldset,
 }
 
 /* Form groups */
+.widget.fonectacontactform .form-group,
 .widget.contactform .form-group,
 .widget.profile .form-group,
 .widget.signupform .form-group,
@@ -268,6 +271,7 @@ fieldset,
 
 /* Labels */
 label,
+.widget.fonectacontactform label,
 .widget.contactform label,
 .widget.profile label,
 .widget.signupform label,
@@ -288,6 +292,11 @@ input[type="password"],
 input[type="email"],
 textarea,
 select,
+.widget.fonectacontactform input.fonectacontactform-email,
+.widget.fonectacontactform input.fonectacontactform-name,
+.widget.fonectacontactform input.fonectacontactform-phone,
+.widget.fonectacontactform input.fonectacontactform-product,
+.widget.fonectacontactform textarea.fonectacontactform-message,
 .widget.contactform input.email,
 .widget.contactform textarea.message,
 .widget.profile input.email,
@@ -328,6 +337,7 @@ select,
 .widget.ecomproduct .ecom-product-info select {}
 
 /* Textarea (Contact form widget) */
+.widget.fonectacontactform textarea.fonectacontactform-message,
 .widget.contactform textarea.message {
 	min-height: 100px;
 }
@@ -335,14 +345,23 @@ select,
 /* Placeholders
 ======================================== */
 
-input::-webkit-input-placeholder {}
-input:-moz-placeholder {}
-input::-moz-placeholder {}
-input:-ms-input-placeholder {}
+input::-webkit-input-placeholder {
+	color: lighten(@font-swatch5-color,5%);
+}
+input:-moz-placeholder {
+	color: lighten(@font-swatch5-color,5%);
+}
+input::-moz-placeholder {
+	color: lighten(@font-swatch5-color,5%);
+}
+input:-ms-input-placeholder {
+	color: lighten(@font-swatch5-color,5%);
+}
 
 /* Buttons
 ======================================== */
 
+.widget.fonectacontactform button.btn,
 .widget.feature .feature-bgimg .content button.btn,
 .widget.contactform button.btn,
 .widget.button button.btn,
@@ -379,6 +398,7 @@ input:-ms-input-placeholder {}
 	color: @font-swatch7-color;
 	letter-spacing: @font-swatch7-letter-spacing;
 	&:hover {
+		cursor: pointer;
 		background-color: darken(@color-swatch3, 10%);
 		text-decoration: none;
 	}
