@@ -388,8 +388,8 @@ main .widget {
 
 /* Tablet viewport */
 
-.widget.map {
-	@media @tablet {
+@media @tablet {
+	.widget.map {
 		.map {
 			min-height: 375px;
 			height: 375px;
@@ -399,12 +399,35 @@ main .widget {
 
 /* Mobile viewport */
 
-.widget.map {
-	@media @mobile {
+@media @mobile {
+	.widget.map {
 		.map {
 			min-height: 250px;
 			height: 250px;
 		}
+	}
+}
+
+/* Fonecta Map (Widget)
+======================================== */
+
+.widget.fonectamap {
+	.fonectamap {}
+}
+
+/* Tablet viewport */
+
+@media @tablet {
+	.widget.fonectamap {
+		.fonectamap {}
+	}
+}
+
+/* Mobile viewport */
+
+@media @mobile {
+	.widget.fonectamap {
+		.fonectamap {}
 	}
 }
 

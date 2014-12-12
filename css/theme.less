@@ -105,6 +105,39 @@ header.template-header {
 	padding: 40px 0;
 }
 
+/* Map - Fonecta map
+======================================== */
+
+.template-map {
+
+	.widget.fonectamap {
+		min-height: 500px;
+		height: 500px 500px;
+		.fonectamap {}
+	}
+
+	/* Tablet viewport */
+
+	@media @tablet {
+		.widget.fonectamap {
+			min-height: 375px;
+			height: 375px;
+			.fonectamap {}
+		}
+	}
+
+	/* Mobile viewport */
+
+	@media @mobile {
+		.widget.fonectamap {
+			min-height: 250px;
+			height: 250px;
+			.fonectamap {}
+		}
+	}
+	
+}
+
 /* Footer
 ======================================== */
 
@@ -134,6 +167,7 @@ footer.template-footer {
 	@media @tablet {
 		.widget.companyname {
 			a {
+				top: 0;
 				font-size: bkscale(@font-swatch10-font-size, 0.6);
 				line-height: bkscale(@font-swatch10-line-height, 0.6);
 			}
