@@ -198,6 +198,17 @@ footer.template-footer {
 	.widget.companyaddress {
 		p.address,
 		p.address1,
+		p.address2 {
+			display: inline-block;
+		}
+		p.address,
+		p.address1 {
+			&:after {
+				content: ", ";
+			}
+		}
+		p.address,
+		p.address1,
 		p.address2,
 		p.postal-code,
 		p.country {
